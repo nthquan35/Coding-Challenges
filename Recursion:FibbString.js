@@ -21,8 +21,8 @@ function fibbString(num, listChar){
 		return "invalid";
 	}
 
-	else if (num == 2){
-		return listChar.join(', ');
+	if (num == 2){
+		return listChar.join(", ");
 	}
 	else {
 		listChar.push(listChar.at(-1) + listChar.at(-2));
